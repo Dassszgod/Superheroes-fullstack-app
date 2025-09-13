@@ -1,0 +1,62 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #1E3A8A 100%);
+}
+
+.formCont {
+    margin-top: 80px;
+    width: 700px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 20px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid white;
+    background-color: #333333;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 35px;
+    margin-bottom: 40px;
+    outline: none;
+}
+
+.input:focus {
+    outline: 1px solid #1E90FF;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.sBut {
+    width: 100%;
+    height: 40px;
+    background-color: #1E90FF;
+    color:white;
+    border-radius: 5px;
+    border: 0px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.sBut:hover {
+    background-color: #0000CD;
+    color: white;
+    cursor: pointer;
+}
+
+.sBut:active {
+    transition: 0s;
+    background-color: black;
+}

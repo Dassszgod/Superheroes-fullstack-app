@@ -1,0 +1,93 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #1E3A8A 100%);
+}
+
+.supCont {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 1000px;
+    justify-content: left;
+}
+
+.supImg {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.supInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 700px;
+    color: white;
+}
+
+.supInfo p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.editBut {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #1E90FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.editBut:hover {
+    background-color: #0000CD;
+}
+
+.editBut:active {
+    transition: 0s;
+    background-color: black;
+}
+
+
+.deleteBut {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #FF0000;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deleteBut:hover {
+    background-color: #BF0000;
+}
+
+.deleteBut:active {
+    transition: 0s;
+    background-color: black;
+}
+
+.butCont {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    gap: 20px;
+}

@@ -1,0 +1,133 @@
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.supTxt {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 72px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00CED1, #1E90FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+      0 0 6px #00CED1,
+      0 0 12px #1E90FF,
+      0 0 20px #0000CD;
+}
+
+
+.pagTxt {
+    margin-top: 5px;
+    background: linear-gradient(90deg, #00CED1, #1E90FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+      0 0 6px #00CED1,
+      0 0 8px #1E90FF,
+      0 0 10px #0000CD;
+}
+
+.cardsCont {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 350px;
+    margin-top: 50px;
+    gap: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 70%, #1E3A8A 100%);
+    border-radius: 16px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.7);
+}
+
+.card h3 {
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card p {
+  margin-left: 10px;
+  color: #d1d5db;
+  margin-bottom: 20px;
+}
+
+.img {
+    margin-top: 0px;
+    width: 100%;
+    height: 250px;
+}
+
+.pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #1E90FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.pagination button:disabled {
+    background: black;
+    cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #0000CD;
+}
+
+.crBut {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #1E90FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    width: 80px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.crBut:hover {
+    background-color: #0000CD;
+}
+
+.crBut:active {
+    transition: 0s;
+    background-color: black;
+}
