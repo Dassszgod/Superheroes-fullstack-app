@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./superhero app back
+      dockerfile: Dockerfile.dev
+    container_name: superhero-back
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./superhero app back:/app
+      - /app/node_modules
+    depends_on:
+      - db
+    environment:
+      DB_USER: postgres
+      DB_HOST: db              
+      DB_NAME: superhero-crud
+      DB_PASSWORD: postgres
+      DB_PORT: 5432
+
+  frontend:
+    build:
+      context: ./superhero app front
+      dockerfile: Dockerfile.dev
+    container_name: superhero-front
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./superhero app front:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:16
+    container_name: superhero-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: superhero-crud
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./dump-utf8.sql:/docker-entrypoint-initdb.d/dump.sql
+
+volumes:
+  pgdata:
