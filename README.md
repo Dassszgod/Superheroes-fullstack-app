@@ -4,7 +4,7 @@ git clone https://github.com/Dassszgod/Superheroes-fullstack-app.git
 
 cd superhero fullstack
 
-Install docker and postgres image for docker
+Install docker desktop / docker engine + compose
 
 Then in root folder of the project with terminal: \
 docker compose up --build
