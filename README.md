@@ -6,7 +6,7 @@ cd superhero fullstack
 
 Install docker and postgres image for docker
 
-Then in root folder of the project: \
+Then in root folder of the project with terminal: \
 docker compose up --build
 
 Now you can open front-end with: \
